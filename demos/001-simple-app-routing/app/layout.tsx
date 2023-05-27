@@ -6,11 +6,7 @@ export const metadata = {
 	description: 'Simple app routing',
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html>
 			<body>
@@ -32,4 +28,6 @@ export default function RootLayout({
 			</body>
 		</html>
 	);
-}
+};
+
+export default RootLayout;
